@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import Counter from "./Counter";
 
-function App() {
+export default function App() {
+  const [first, setfirst] = useState(false)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={() =>  setfirst(!first)}> RENDER COMPONENT</button>
+      {first ? <Counter first={first}/> : null }
     </div>
   );
 }
-
-export default App;
