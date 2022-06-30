@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const FunUseStateObject = () => {
   const [name, setName] = useState({
     firstName: "",
-    lastName: "",
+    lastName: "sa",
   });
   return (
     <div>
