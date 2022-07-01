@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import Parent from "./contextcomponent/Parent";
 import ClassUseEffect from "./functioncomponent/ClassUseEffect";
 import FunComp from "./functioncomponent/FunComp.js";
 import FunUseEffect from "./functioncomponent/FunUseEffect";
@@ -20,7 +21,8 @@ export default function App() {
       {/* <FunUseStateArray/> */}
       
       {/* {render && <ClassUseEffect/>} */}
-      { render && <FunUseEffect/>}
+      {/* { render && <FunUseEffect/>} */}
+      <Parent/>
     </div>
   );
 }
