@@ -13,11 +13,18 @@ export default class Counter extends Component {
     super(props);
     this.state={
       number:0,
-      loading:true
+      loading:true,
+      progressVar:"PROGRESS_VIEW",
+      progressVar2:"PROGRESS_VIEW2",
     }
   }
 
   increment = () => {
+
+    const results={}
+    results[this.state.progressVar]=true
+    results[this.state.progressVar2]=true
+    console.log("ASDF", results);
     console.log("INCREMENT LOG");
     this.setState({number: this.state.number+1})
   }

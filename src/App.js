@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Parent from "./contextcomponent/Parent";
+import Counter from "./Counter";
 import ClassUseEffect from "./functioncomponent/ClassUseEffect";
 import FunComp from "./functioncomponent/FunComp.js";
 import FunUseEffect from "./functioncomponent/FunUseEffect";
@@ -15,14 +16,14 @@ export default function App() {
   return (
     <div className="App">
       <button onClick={() =>  setRender(!render)}> RENDER COMPONENT</button>
-      {/* {first ? <Counter first={first}/> : null } */}
+      {first ? <Counter first={first}/> : null }
    {/* <FunComp  firstProps={first} secondProps={second} thirdProps={third}/> */}
       {/* <FunUseStateObject /> */}
       {/* <FunUseStateArray/> */}
       
       {/* {render && <ClassUseEffect/>} */}
       {/* { render && <FunUseEffect/>} */}
-      <Parent/>
+      {/* <Parent/> */}
     </div>
   );
 }
