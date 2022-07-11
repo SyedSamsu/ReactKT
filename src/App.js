@@ -10,6 +10,7 @@ import FunUseRef from "./functioncomponent/FunUseRef";
 import FunUseRef2 from "./functioncomponent/FunUseRef2";
 import FunUseStateArray from "./functioncomponent/FunUseStateArray";
 import FunUseStateObject from "./functioncomponent/FunUseStateObject";
+import CustomRouter from "./reactrouter/CustomRouter";
 
 export default function App() {
   const [render, setRender] = useState(true)
@@ -29,7 +30,8 @@ export default function App() {
       {/* <Parent/> */}
       {/* <FunUseRef/> */}
       {/* <FunUseRef2/> */}
-      <FunCustomHook/>
-    </div>
+      {/* <FunCustomHook/> */}
+      <CustomRouter /> 
+      </div>
   );
 }
