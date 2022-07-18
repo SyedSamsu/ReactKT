@@ -11,6 +11,7 @@ import FunUseRef2 from "./functioncomponent/FunUseRef2";
 import FunUseStateArray from "./functioncomponent/FunUseStateArray";
 import FunUseStateObject from "./functioncomponent/FunUseStateObject";
 import CustomRouter from "./reactrouter/CustomRouter";
+import ReduxEg from "./redux/components/ReduxEg";
 
 export default function App() {
   const [render, setRender] = useState(true)
@@ -32,6 +33,7 @@ export default function App() {
       {/* <FunUseRef2/> */}
       {/* <FunCustomHook/> */}
       <CustomRouter /> 
+      {/* <ReduxEg /> */}
       </div>
   );
 }
