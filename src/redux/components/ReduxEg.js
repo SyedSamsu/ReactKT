@@ -40,7 +40,7 @@ function ReduxEg() {
         <div>Staus Name Value From Store - {statusStaus} </div>
 
         <Button onClick={increment}> INCREMENT + 2 </Button>
-        <Button onClick={decrement}> DECREMENT +2  </Button>
+        <Button onClick={decrement}> DECREMENT -2  </Button>
         <button onClick={statusCheck}> STATUS UP CHECK</button>
         <button onClick={statusDOWNCheck}> STATUS DOWN CHECK</button>
     </div>
