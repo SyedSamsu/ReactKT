@@ -9,6 +9,7 @@ function Header() {
         <Link to="/profile">Profile</Link>
         <Link to="/about/anil">About</Link>
         <Link to="/redux">REdux</Link>
+        <Link to="/hoc">HOC</Link>
       </nav>
     </div>
   )
