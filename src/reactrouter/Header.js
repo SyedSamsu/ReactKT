@@ -10,6 +10,7 @@ function Header() {
         <Link to="/about/anil">About</Link>
         <Link to="/redux">REdux</Link>
         <Link to="/hoc">HOC</Link>
+        <Link to="/axios">Axios</Link>
       </nav>
     </div>
   )
