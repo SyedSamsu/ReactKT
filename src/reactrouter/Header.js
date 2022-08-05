@@ -11,6 +11,7 @@ function Header() {
         <Link to="/redux">REdux</Link>
         <Link to="/hoc">HOC</Link>
         <Link to="/axios">Axios</Link>
+        <Link to="/bookstore">Book Store</Link>
       </nav>
     </div>
   )

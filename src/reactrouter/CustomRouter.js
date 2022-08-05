@@ -1,7 +1,7 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "../axios/Index";
-import TodosList from "../axios/TodosList";
+import BookStoreIndex from "../bookstoreui/BookStoreIndex";
 import CommonHOC from "../hoc/CommonHOC";
 import Redux from "../redux/components/Redux";
 import About from "./About";
@@ -22,6 +22,7 @@ function CustomRouter() {
         <Route path="/redux" element={<Redux />} />
         <Route path="/hoc" element={<CommonHOC />} />
         <Route path="/axios" element={<Index />} />
+        <Route path="/bookstore" element={<BookStoreIndex />} />
         <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
